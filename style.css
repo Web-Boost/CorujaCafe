@@ -1,0 +1,14 @@
+@import url("./styles/fonts.css");
+@import url("./styles/principal.css");
+
+@import url("./styles/nav.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: #cecece;
+  height: 300vh;
+}
