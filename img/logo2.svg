@@ -3,5 +3,5 @@
     <circle cx="92" cy="36" r="22" />
     <line x1="7.07107" y1="8" x2="17.6777" y2="18.6066" stroke-linecap="round"/>
     <line x1="120.819" y1="8.07042" x2="110.07" y2="18.5329" stroke-linecap="round"/>
-    <rect x="61" y="62.7782" width="5.5" height="5.5" transform="rotate(-45 56 62.7782)" fill="#C4C4C4"/>
+    <rect x="61" y="62.7782" width="5.5" height="5.5" transform="rotate(-45 56 62.7782)" fill="#DEDEDE"/>
 </svg>

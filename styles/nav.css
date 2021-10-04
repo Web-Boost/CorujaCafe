@@ -54,3 +54,11 @@ nav > ul > a:hover {
   background-color: #dedede;
   color: #121212;
 }
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center;
+  }
+}
