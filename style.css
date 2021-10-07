@@ -179,6 +179,13 @@ div#info p#telefone::after {
 #cardapio ul div.preco {
   width: 30%;
 }
+
+@media screen and (max-width: 1000px) {
+  header nav {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   header {
     width: 100%;
