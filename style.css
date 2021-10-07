@@ -11,6 +11,12 @@ body {
   background-color: #121212;
   color: #949494;
   height: 300vh;
+  font-family: "Alegreya SC", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #949494;
 }
 
 header {
@@ -133,6 +139,40 @@ div#info p#telefone::after {
   font-weight: lighter;
 }
 
+#cardapio ul {
+  padding: 0;
+}
+
+#cardapio ul * {
+  padding: 0;
+  margin: 0;
+}
+
+#cardapio ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 0.5px dotted #5e5d5d15;
+  margin: 10px 0px;
+}
+
+#cardapio ul div.item {
+  width: 70%;
+  text-align: left;
+}
+
+#cardapio ul div.item p {
+  color: #5e5d5d;
+  font-size: 14px;
+}
+
+#cardapio ul div.preco {
+  width: 30%;
+}
 @media screen and (max-width: 600px) {
   header {
     width: 100%;
@@ -146,5 +186,9 @@ div#info p#telefone::after {
   header nav {
     width: 90%;
     margin-bottom: 20px;
+  }
+
+  #cardapio ul li {
+    width: 100%;
   }
 }
