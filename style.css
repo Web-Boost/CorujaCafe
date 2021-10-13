@@ -247,19 +247,30 @@ div#info p#telefone::after {
   justify-content: center;
   width: 80%;
   margin: auto;
+  max-width: 1500px;
 }
 
 #galeria .gallery-image img {
-  width: 350px;
+  width: 300px;
 }
 
 #galeria .img-box {
   box-sizing: content-box;
   margin: 10px;
-  width: 350px;
   overflow: hidden;
-  display: inline-block;
-  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  #galeria .gallery-image {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  #galeria .gallery-image .img-box img{
+    margin: auto;
+    width: 80%;
+  }
 }
 
 #sobre hr {
@@ -285,9 +296,9 @@ div#info p#telefone::after {
 }
 
 #sobre .mapBox {
-  width: 800px;
-  height: 250px;
+  height: 350px;
   margin-top: 40px;
+  width: 80%;
 }
 
 #sobre .mapBox iframe {
@@ -296,8 +307,8 @@ div#info p#telefone::after {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 2000px) {
   #sobre .mapBox {
-    width: 80%;
+    height: 800px;
   }
 }
