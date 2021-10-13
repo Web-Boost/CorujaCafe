@@ -115,7 +115,7 @@ div#info p#telefone::before,
 div#info p#telefone::after {
   content: "";
   display: inline-block;
-  width: 90px;
+  width: 45px;
   height: 1px;
   background: #cecece;
   margin: 0px 15px 3px 15px;
