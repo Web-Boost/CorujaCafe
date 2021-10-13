@@ -381,15 +381,18 @@ div#info p#telefone::after {
   background-color: #4d4d4db6;
   top: 90%;
   left: 80%;
+  transition: 2s;
 
-  display: none;
-
+  visibility: hidden;
+  display: flex;
+  opacity: 0;
   align-items: center;
   justify-content: center;
 }
 
 @media screen and (max-width: 500px) {
-  #back-to-top {
-    display: flex;
+  #back-to-top.show {
+    visibility: visible;
+    opacity: 1;
   }
 }
