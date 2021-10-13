@@ -180,9 +180,12 @@ div#info p#telefone::after {
   width: 30%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   header nav {
     width: 50%;
+  }
+  #cardapio ul div.preco {
+    width: 25%;
   }
 }
 
@@ -208,6 +211,13 @@ div#info p#telefone::after {
 
   #cardapio ul li {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  div#info p#telefone::before,
+  div#info p#telefone::after {
+    width: 25px;
   }
 }
 
