@@ -229,6 +229,7 @@ div#info p#telefone::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 
 #galeria body {
@@ -311,4 +312,44 @@ div#info p#telefone::after {
 
 #galeria .opacity-low {
   opacity: 0.5;
+}
+
+#sobre hr {
+  border: 0.5px solid #5e5d5d73;
+  width: 75%;
+}
+
+#sobre h1 {
+  color: #5e5d5d;
+  font-family: "Italianno", cursive;
+  font-size: 54px;
+  margin: 0;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+#sobre .mapBox {
+  width: 800px;
+  height: 250px;
+  margin-top: 40px;
+}
+
+#sobre .mapBox iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #sobre .mapBox {
+    width: 80%;
+  }
 }
