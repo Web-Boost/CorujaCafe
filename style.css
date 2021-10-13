@@ -232,11 +232,6 @@ div#info p#telefone::after {
   margin-bottom: 20px;
 }
 
-#galeria body {
-  font-family: Raleway;
-  background-color: #202125;
-}
-
 #galeria .heading {
     text-align: center;
     font-size: 2.0em;
@@ -250,68 +245,21 @@ div#info p#telefone::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 80%;
+  margin: auto;
 }
 
 #galeria .gallery-image img {
-  height: 250px;
   width: 350px;
-  transform: scale(1.0);
-  transition: transform 0.4s ease;
 }
 
 #galeria .img-box {
   box-sizing: content-box;
   margin: 10px;
-  height: 250px;
   width: 350px;
   overflow: hidden;
   display: inline-block;
-  color: white;
   position: relative;
-  background-color: white;
-}
-
-#galeria .caption {
-  position: absolute;
-  bottom: 5px;
-  left: 20px;
-  opacity: 0.0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-#galeria .transparent-box {
-  height: 250px;
-  width: 350px;
-  background-color:rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: background-color 0.3s ease;
-}
-
-#galeria .img-box:hover img { 
-  transform: scale(1.1);
-}
-
-#galeria .img-box:hover .transparent-box {
-  background-color:rgba(0, 0, 0, 0.5);
-}
-
-#galeria .img-box:hover .caption {
-  transform: translateY(-20px);
-  opacity: 1.0;
-}
-
-#galeria .img-box:hover {
-  cursor: pointer;
-}
-
-#galeria .caption > p:nth-child(2) {
-  font-size: 0.8em;
-}
-
-#galeria .opacity-low {
-  opacity: 0.5;
 }
 
 #sobre hr {
