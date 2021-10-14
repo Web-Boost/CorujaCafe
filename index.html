@@ -166,12 +166,68 @@
 
         </section>
 
+        <section id="recomendo">
+            <hr>
+            <h1>Avaliações</h1>
+            <hr>
+            <div>
+                <div>
+                    <img src="./img/arrow-left.svg" id="arrow-left" onclick="chngimgless()">
+                </div>
+                <img src="./img/recomendo/1.jpg" id="image-odonto">
+                <div>
+                    <img src="./img/arrow-right.svg" id="arrow-right" onclick="chngimgplus()">
+                </div>
+            </div>
+        </section>
+
         <footer>
             <p>Desenvolvido por Web Boost.</p>
             <a href="#inicio" id="back-to-top"><img src="./img/chevron-up.svg" alt=""></a>
         </footer>
 
         <script src="./Script.js"></script>
+
+        <script>
+            const imagens = [1,2];
+            var atual = 1;        
+            function chngimgplus() {
+                var image = document.getElementById('image-odonto');
+                var arrow = document.getElementById('arrow-right');
+                image.classList.toggle('animate');
+                arrow.classList.add('animate');
+                atual++;
+                if(atual > imagens.length) {
+                    atual = 1
+                }
+                setTimeout(function(){ image.classList.remove('animate');}, 500);
+                setTimeout(function(){ arrow.classList.remove('animate');}, 1000);
+                document.getElementById('image-odonto').src  = `./img/recomendo/${atual}.jpg`;
+           } function chngimgless() {
+                var image = document.getElementById('image-odonto');
+                var arrow = document.getElementById('arrow-left');
+                image.classList.toggle('animate');
+                arrow.classList.add('animate');
+                if(atual == 1) {
+                    atual = imagens.length;
+                } else {
+                    atual--;
+                }
+                setTimeout(function(){ image.classList.remove('animate');}, 500);
+                setTimeout(function(){ arrow.classList.remove('animate');}, 1000);
+                document.getElementById('image-odonto').src  = `./img/Provas sociais/odonto/${atual}.jpeg`;
+           }
+           function aa(item) {
+                itens = ["faq-1","faq-2"];
+                for(let i = 0; i < 3; i++){
+                    if (itens[i] != item){
+                        document.getElementById(itens[i]).classList.remove('view');
+                    } else {
+                        document.getElementById(itens[i]).classList.toggle('view');
+                    }
+                }
+            }
+        </script>
 
     </body>
 
