@@ -350,6 +350,10 @@ div#info p#telefone::after {
     margin: auto;
     width: 80%;
   }
+
+  #galeria #instagram {
+    width: 80%;
+  }
 }
 
 #sobre hr {
