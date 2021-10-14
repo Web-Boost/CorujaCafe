@@ -321,6 +321,25 @@ div#info p#telefone::after {
   top: 0px;
   opacity: 1;
 }
+
+#galeria #instagram {
+  width: 400px;
+  margin: 20px auto 0px;
+  border: 1px solid rgb(189, 189, 189);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#galeria #instagram img {
+  margin-right: 15px;
+}
+
+#galeria #instagram h2 {
+  font-weight: normal;
+}
 @media screen and (max-width: 500px) {
   #galeria .gallery-image {
     width: 100%;
@@ -406,4 +425,8 @@ div#info p#telefone::after {
     visibility: visible;
     opacity: 1;
   }
+}
+
+footer {
+  text-align: center;
 }
