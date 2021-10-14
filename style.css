@@ -352,7 +352,7 @@ div#info p#telefone::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 500px;
+  min-height: 800px;
 }
 
 #sobre .mapBox {
@@ -405,108 +405,5 @@ div#info p#telefone::after {
   #back-to-top.show {
     visibility: visible;
     opacity: 1;
-  }
-}
-
-#recomendo hr {
-  border: 0.5px solid #5e5d5d73;
-  width: 75%;
-}
-
-#recomendo h1 {
-  color: #5e5d5d;
-  font-family: "Italianno", cursive;
-  font-size: 54px;
-  margin: 0;
-  font-weight: lighter;
-  text-align: center;
-}
-
-
-
-section#recomendo {
-  margin: auto;
-  overflow-x: hidden;
-}
-
-section#recomendo div {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 40px;
-}
-
-section#recomendo img#image-odonto {
-  width: 80%;
-  transition: 0.1s;
-}
-
-section#recomendo img#image-odonto.animate {
-  animation-name: slide;
-  animation-duration: 1s;
-}
-
-section#recomendo div div {
-  height: 100%;
-  width: 100%;
-}
-
-section#recomendo div div img#arrow-left,
-section#recomendo div div img#arrow-right {
-  position: relative;
-  width: 20%;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
-section#recomendo div div img#arrow-left {
-  left: -5px;
-}
-section#recomendo div div img#arrow-right {
-  left: 5px;
-}
-
-section#recomendo div div img#arrow-right.animate {
-  animation-name: arrow-to-right;
-}
-
-section#recomendo div div img#arrow-left.animate {
-  animation-name: arrow-to-left;
-}
-
-@media screen and (max-width: 1500px) {
-  
-  section#recomendo div div img#arrow-left,
-  section#recomendo div div img#arrow-right {
-    width: 100px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  section#recomendo img#image-odonto {
-    width: 50%;
-  }
-}
-
-@keyframes arrow-to-left {
-  from {
-    left: -5px;
-  }
-  to {
-    left: -20px;
-  }
-}
-
-@keyframes arrow-to-right {
-  from {
-    left: 5px;
-  }
-  to {
-    left: 20px;
   }
 }
